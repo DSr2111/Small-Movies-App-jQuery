@@ -7,13 +7,14 @@
   </head>
   <body>
     <h1>Movie Ratings</h1>
-    <form>
+    <form id="container">
       <label for="title">Title</label>
-      <input type="text" id="title" />
-      <label for="rating">Rating</label>
-      <input type="range" id="rating" />
-      <input type="button" />Submit Rating
+      <input type="text" name="title" id="title" /><br />
+      <label for="rating">Rating</label><br />
+      <input type="range" name="rating" id="rating" min="0" max="10" /><br />
+      <input type="submit" value="Add Movie Rating" />
     </form>
+    <ul></ul>
     <script
       src="https://code.jquery.com/jquery-3.7.1.min.js"
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
