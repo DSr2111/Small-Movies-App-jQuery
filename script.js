@@ -13,15 +13,7 @@ $(document).ready(function () {
     let rating = $("#rating").val();
 
     $("#movieList").append(
-      "<li>" +
-        "Movie: " +
-        " " +
-        movieTitle +
-        "" +
-        "Rating:" +
-        "  " +
-        rating +
-        "</li>"
+      "<li>" + "  " + movieTitle + " -> " + rating + "/10" + "</li>"
     );
   });
 });
