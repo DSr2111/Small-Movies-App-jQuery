@@ -19,7 +19,8 @@ $(document).ready(function () {
         " -> " +
         rating +
         "/10" +
-        '<button class="delete-btn">Delete</button>"</li>'
+        "  " +
+        '<button class="delete-btn">Delete</button></li>'
     );
     movieTitle.val("");
     rating.val("");
