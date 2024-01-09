@@ -13,7 +13,18 @@ $(document).ready(function () {
     let rating = $("#rating").val();
 
     $("#movieList").append(
-      "<li>" + "  " + movieTitle + " -> " + rating + "/10" + "</li>"
+      "<li>" +
+        "  " +
+        movieTitle +
+        " -> " +
+        rating +
+        "/10" +
+        '<button class="delete-btn">Delete</button>"</li>'
     );
+    movieTitle.val("");
+    rating.val("");
+    $("#movieList").on("click", ".delete-btn", function () {
+      $(this).parent().remove();
+    });
   });
 });
