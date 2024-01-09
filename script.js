@@ -23,8 +23,8 @@ $(document).ready(function () {
         '<button class="delete-btn">Delete</button></li>'
     );
 
-    $("movieTitle").val("");
-    $("rating").val("");
+    $("#title").val("");
+    $("#rating").val("");
   });
 
   $("#movieList").on("click", ".delete-btn", function () {
