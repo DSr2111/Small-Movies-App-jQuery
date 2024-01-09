@@ -4,3 +4,24 @@
 //to the DOM along with a button to remove each title and rating from the DOM.
 
 //When the button to remove is clicked, remove each title and rating from the DOM.
+
+$(document).ready(function () {
+  $("#movieForm").submit(function (e) {
+    e.preventDefault();
+
+    let movieTitle = $("#title").val();
+    let rating = $("#rating").val();
+
+    $("#movieList").append(
+      "<li>" +
+        "Movie: " +
+        " " +
+        movieTitle +
+        "" +
+        "Rating:" +
+        "  " +
+        rating +
+        "</li>"
+    );
+  });
+});
